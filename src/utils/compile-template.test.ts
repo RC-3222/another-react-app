@@ -13,17 +13,17 @@ describe("compile a template with some incorrect input data", () => {
         ]);
 
         template.divideNode(0);
-        template.tree!.children![0].text.value = "Hello, {firstname1} {lastname}!";
+        template.tree!.children![0].text.value = "Hi there, {firstname1}!";
 
         const testCompileFn = jest.fn(compileTemplate);
 
         const values = {
-            firstname: "John",
-            lastname: "Wayne",
+            firstname: "Billy",
+            lastname: "Gates",
         };
 
         expect(testCompileFn(template, values)).toEqual(
-            "Hello, {firstname1} Wayne!"
+            "Hi there, {firstname1}!"
         );
     });
 
