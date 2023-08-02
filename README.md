@@ -1,7 +1,5 @@
-# some-generic-react-task
+# Message template editor
 
-If you got here by link, you probably already know what it is and what are the requirments, so go ahead and check.
-
-All the needed info can be found in those requirments and in the comments (and docstrings) around the project.
+An editor for message templates that works with a predefined set of variables.
 
 Deployment: https://rc-3222.github.io/msg-tmp-ed-depl/
